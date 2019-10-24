@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <in.codeshuffle.scratchcardlayout.ui.ScratchCardLayout
+        android:id="@+id/scratchCardLayout"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:scratchWidth="80dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:scratchEnabled="true"
+        app:cardCornerRadius="8dp"
+        app:scratchDrawable="@drawable/scratch_card_foreground"
+        app:scratchRevealFullAtPercent="100">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/pic2"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </in.codeshuffle.scratchcardlayout.ui.ScratchCardLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#525252"
+        android:layout_below="@+id/scratchCardLayout"
+        android:id="@+id/tv_message"
+        android:text="scratch And win"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/scratch_and_win"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="320dp"/>
+
+
+</RelativeLayout>
